@@ -1,0 +1,533 @@
+/* === ✨ — NEON DREAMS GLOW-UP FOR VS-CODE — ✨ === */
+
+/* White/Default text - punctuation, operators, brackets */
+.monaco-editor .view-lines .view-line span:not([class*="mtk"]),
+.monaco-editor .view-lines .view-line span.mtk1 {
+  color: #fdfdfd !important;
+  text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 8px #03edf975 !important;
+  backface-visibility: hidden;
+}
+
+
+/* String literals  */
+ .monaco-editor .view-lines .view-line span.mtk4 {
+  color: #fff5f6 !important;
+  text-shadow: 0 0 2px #000, 0 0 10px #fc1f2c75, 0 0 5px #fc1f2c75, 0 0 25px #fc1f2c75 !important;
+  backface-visibility: hidden;
+}  
+
+
+
+/* Comments - subtle glow */
+.monaco-editor .view-lines .view-line span.mtk3 {
+  color: #848bbd !important;
+  text-shadow:
+    0 0 2px #1c1a2a,
+    0 0 4px #848bbdb0,
+    0 0 6px #848bbdb0 !important;
+  backface-visibility: hidden;
+}
+
+
+
+/* Variables - pink */
+.monaco-editor .view-lines .view-line span.mtk6 {
+  color: #fff0fb !important;
+  text-shadow:
+    0 0 2px #150015,
+    0 0 3px #ff5fd275,
+    0 0 5px #ff5fd275,
+    0 0 8px #ff5fd275 !important;
+  backface-visibility: hidden;
+}
+
+
+/* Keywords, operators - red glow */
+.monaco-editor .view-lines .view-line span.mtk7,
+.monaco-editor .view-lines .view-line span.mtk9 {
+  color: #fff3f3 !important;
+  text-shadow:
+    0 0 2px #000,
+    0 0 3px #fc1f2c75,
+    0 0 5px #fc1f2c75,
+    0 0 8px #fc1f2c75 !important;
+  backface-visibility: hidden;
+}
+
+
+/* Numbers, constants - yellow glow */
+.monaco-editor .view-lines .view-line span.mtk8,
+.monaco-editor .view-lines .view-line span.mtk14 {
+  color: #f4eee4 !important;
+  text-shadow: 0 0 2px #393a33, 0 0 8px #f39f0575, 0 0 2px #f39f0575 !important;
+  backface-visibility: hidden;
+}
+
+/* Functions - cyan glow */
+.monaco-editor .view-lines .view-line span.mtk10 {
+  color: #fdfdfd !important;
+  text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 8px #03edf975 !important;
+  backface-visibility: hidden;
+}
+
+/* Types, Classes - Green glow */
+
+.monaco-editor .view-lines .view-line span.mtk11 {
+  color: #f2fff9 !important;
+  text-shadow:
+    0 0 2px #001716,
+    0 0 3px #72f1b875,
+    0 0 5px #72f1b875,
+    0 0 8px #72f1b875 !important;
+  backface-visibility: hidden;
+}
+
+
+/* Additional common token types with glow */
+.monaco-editor .view-lines .view-line span.mtk12 {
+  color: #ff7edb !important;
+  text-shadow: 0 0 2px #100c0f, 0 0 5px #dc078e33, 0 0 10px #fff3 !important;
+  backface-visibility: hidden;
+}
+
+.monaco-editor .view-lines .view-line span.mtk13 {
+  color: #f4eee4 !important;
+  text-shadow: 0 0 2px #393a33, 0 0 8px #f39f0575, 0 0 2px #f39f0575 !important;
+  backface-visibility: hidden;
+}
+
+/* Parentheses, brackets, semicolons - ensure they glow */
+.monaco-editor .view-line span:contains('('),
+.monaco-editor .view-line span:contains(')'),
+.monaco-editor .view-line span:contains('{'),
+.monaco-editor .view-line span:contains('}'),
+.monaco-editor .view-line span:contains('['),
+.monaco-editor .view-line span:contains(']'),
+.monaco-editor .view-line span:contains(';'),
+.monaco-editor .view-line span:contains(',') {
+  color: #fdfdfd !important;
+  text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975 !important;
+  backface-visibility: hidden;
+}
+
+/* Line numbers with subtle glow */
+.monaco-editor .line-numbers {
+  text-shadow: 0 0 3px #ffffff44, 0 0 6px #ffffff22 !important;
+}
+
+/* Enhanced cursor glow */
+
+.monaco-editor .cursor {
+  background-color: #ff0040 !important;
+  box-shadow: 
+    inset 0 0 2px #ffffff,
+    0 0 5px #ff0040,
+    0 0 12px #ff0040,
+    0 0 20px #ff0040,
+    0 0 30px #ff0040aa,
+    0 0 40px #ff004044 !important;
+}
+
+/* Make sure all text in the editor gets some glow */
+.monaco-editor .view-lines .view-line {
+  text-shadow: 0 0 1px currentColor;
+}
+
+/* Override any conflicting styles */
+.monaco-editor .view-lines .view-line span {
+  backface-visibility: hidden !important;
+}
+
+/* Ensure proper rendering performance */
+.monaco-editor {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.monaco-editor .view-lines {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+
+/* === ✨ — FULL UI GLOW EXTENSION — ✨ === */
+
+/* Active tab label glow */
+.monaco-workbench .tab.active .tab-label {
+  color: #ffd9f5 !important;
+  text-shadow:
+    0 0 2px #20001a,
+    0 0 4px #ff5fd2,
+    0 0 8px #ff5fd2 !important;
+}
+
+/* Inactive tab label soft glow */
+.monaco-workbench .tab .tab-label {
+  color: #a87ca3 !important;
+  text-shadow:
+    0 0 1px #1a0010,
+    0 0 2px #7a3a7260 !important;
+}
+
+/* Active tab background glow */
+.monaco-workbench .tab.active {
+  background-color: #29002299 !important;
+}
+
+/* Sidebar section titles */
+.monaco-workbench .pane-header .title {
+  color: #b6fcd5 !important;
+  text-shadow:
+    0 0 2px #001716,
+    0 0 4px #72f1b875 !important;
+}
+
+/* Sidebar explorer text */
+.monaco-workbench .explorer-viewlet .monaco-list-row .label-name,
+.monaco-workbench .extensions-viewlet .monaco-list-row .label-name {
+  color: #fdfdfd !important;
+  text-shadow:
+    0 0 2px #001716,
+    0 0 3px #03edf975,
+    0 0 5px #03edf975 !important;
+}
+
+/* Activity bar icons (side icons) */
+.monaco-workbench .activitybar .action-item .codicon {
+  color: #fff;
+  text-shadow:
+    0 0 2px #000,
+    0 0 6px #03edf9,
+    0 0 10px #03edf9 !important;
+}
+
+/* Status bar glow */
+.monaco-workbench .statusbar {
+  background-color: #140c1a !important;
+  color: #fdfdfd !important;
+  text-shadow:
+    0 0 2px #1a001f,
+    0 0 4px #ff5fd2,
+    0 0 6px #ff5fd2 !important;
+}
+
+/* Command palette glow */
+.quick-input-widget {
+  background-color: #190019dd !important;
+  color: #fff0fb !important;
+  text-shadow:
+    0 0 2px #150015,
+    0 0 4px #ff5fd2,
+    0 0 6px #ff5fd2 !important;
+  border: 1px solid #ff5fd255 !important;
+}
+
+/* Quick pick entries (palette options) */
+.quick-input-list .monaco-list-row .label-name {
+  color: #fdfdfd !important;
+  text-shadow:
+    0 0 2px #001716,
+    0 0 3px #03edf975,
+    0 0 5px #03edf975 !important;
+}
+
+/* Dropdown and context menu glow */
+.monaco-menu .monaco-action-label {
+  color: #fff5f6 !important;
+  text-shadow:
+    0 0 2px #1a0000,
+    0 0 3px #fc1f2c75,
+    0 0 5px #fc1f2c75 !important;
+}
+
+/* Scrollbar glow */
+.monaco-scrollable-element > .scrollbar > .slider {
+  background-color: #ff5fd299 !important;
+  box-shadow:
+    0 0 4px #ff5fd2,
+    0 0 8px #ff5fd2 !important;
+}
+
+/* Panel headers (e.g., terminal, output) */
+.part.panel .composite.title .title-label {
+  color: #ff9de2 !important;
+  text-shadow:
+    0 0 2px #20001a,
+    0 0 4px #ff5fd2,
+    0 0 6px #ff5fd2 !important;
+}
+
+
+/* 🔍 Top action bar (search, Copilot, Git etc.) */
+.monaco-workbench .titlebar > .window-title, 
+.monaco-workbench .titlebar > .window-controls, 
+.monaco-workbench .menubar > .menubar-menu-button {
+  color: #fff !important;
+  text-shadow:
+    0 0 2px #20001a,
+    0 0 4px #ff5fd2,
+    0 0 6px #ff5fd2 !important;
+}
+
+/* 🧠 Top action bar buttons (like Git, Copilot, Search) */
+.monaco-workbench .monaco-action-bar .action-label.codicon {
+  color: #ffffff !important;
+  text-shadow:
+    0 0 2px #000,
+    0 0 5px #03edf9,
+    0 0 8px #03edf9 !important;
+}
+
+/* 🔍 Search bar input (command palette & top bar) */
+.monaco-workbench .search-view .search-widget .inputbox input,
+.quick-input-widget input {
+  color: #fff !important;
+  background-color: #12000f99 !important;
+  border: 1px solid #ff5fd299 !important;
+  text-shadow:
+    0 0 2px #1a001f,
+    0 0 4px #ff5fd2,
+    0 0 6px #ff5fd2 !important;
+}
+
+/* 📂 View header bars (Explorer, Search, Source Control, Run and Debug, Extensions) */
+.monaco-workbench .composite.title .title-label {
+  color: #fff0fb !important;
+  text-shadow:
+    0 0 2px #150015,
+    0 0 4px #ff5fd2,
+    0 0 6px #ff5fd2 !important;
+}
+
+/* 📁 Custom icon packs in explorer */
+.explorer-viewlet .explorer-item .monaco-icon-label .label-icon.codicon {
+  color: #ffffff !important;
+  text-shadow:
+    0 0 2px #001716,
+    0 0 4px #03edf975,
+    0 0 6px #03edf975 !important;
+}
+
+/* 📜 Panel headers (Terminal, Output, Problems) */
+.part.panel .composite.title .title-label {
+  color: #b6fcd5 !important;
+  text-shadow:
+    0 0 2px #001716,
+    0 0 4px #72f1b8,
+    0 0 6px #72f1b8 !important;
+}
+
+/* 🟪 Optional: Adjust header bar background for extra pop */
+.monaco-workbench .composite.title,
+.part.panel .composite.title {
+  background-color: #1a001a77 !important;
+  border-bottom: 1px solid #ff5fd244 !important;
+}
+
+/* 🧩 Glow for extensions/debug/test/git/search menus (improved targeting) */
+.monaco-workbench .pane .pane-body .monaco-list-row .monaco-highlighted-label,
+.monaco-workbench .pane .pane-body .monaco-list-row .monaco-highlighted-label span,
+.monaco-workbench .extensions-viewlet .extension-list-item .details,
+.monaco-workbench .extensions-viewlet .extension-list-item .description,
+.monaco-workbench .extensions-viewlet .extension-list-item .author {
+  color: #fdfdfd !important;
+  text-shadow:
+    0 0 2px #001716,
+    0 0 3px #03edf975,
+    0 0 5px #03edf975 !important;
+}
+
+/* 🧮 Bottom tab bar: Problems, Output, Debug Console, Terminal, Ports */
+.monaco-workbench .part.panel .composite.switcher .tab {
+  color: #fff0fb !important;
+  text-shadow:
+    0 0 2px #1a001a,
+    0 0 4px #ff5fd2,
+    0 0 6px #ff5fd2 !important;
+}
+
+/* Optional: Highlight active bottom panel tab */
+.monaco-workbench .part.panel .composite.switcher .tab.active {
+  background-color: #29002266 !important;
+}
+
+/* 🔧 Settings/Preferences text when opened */
+.monaco-workbench .settings-editor .settings-header .settings-header-controls .settings-tabs-widget .monaco-action-bar .action-label,
+.monaco-workbench .settings-editor .setting-item .setting-item-title,
+.monaco-workbench .settings-editor .setting-item .setting-item-description {
+  color: #fdfdfd !important;
+  text-shadow:
+    0 0 2px #001716,
+    0 0 3px #03edf975,
+    0 0 5px #03edf975 !important;
+}
+
+/* 📋 Context menu items (right-click menus) */
+.monaco-menu .monaco-action-label,
+.context-view .monaco-menu .monaco-action-label {
+  color: #fff5f6 !important;
+  text-shadow:
+    0 0 2px #1a0000,
+    0 0 3px #fc1f2c75,
+    0 0 5px #fc1f2c75 !important;
+}
+
+/* 🎯 Autocomplete/IntelliSense popup */
+.monaco-editor .suggest-widget .monaco-list-row .label-name,
+.monaco-editor .suggest-widget .monaco-list-row .label-description,
+.monaco-editor .suggest-widget .monaco-list-row .label-detail {
+  color: #fdfdfd !important;
+  text-shadow:
+    0 0 2px #001716,
+    0 0 3px #03edf975,
+    0 0 5px #03edf975 !important;
+}
+
+/* 🚨 Error/Warning messages in editor */
+.monaco-editor .zone-widget .zone-widget-container .peekview-title,
+.monaco-editor .marker-widget .marker-widget-container .title {
+  color: #fff5f6 !important;
+  text-shadow:
+    0 0 2px #1a0000,
+    0 0 3px #fc1f2c75,
+    0 0 5px #fc1f2c75 !important;
+}
+
+/* 🔍 Find widget (Ctrl+F search box) */
+.monaco-editor .find-widget .input-box input,
+.monaco-editor .find-widget .monaco-inputbox input {
+  color: #fff !important;
+  background-color: #12000f99 !important;
+  border: 1px solid #ff5fd299 !important;
+  text-shadow:
+    0 0 2px #1a001f,
+    0 0 4px #ff5fd2,
+    0 0 6px #ff5fd2 !important;
+}
+
+/* 🔍 Find widget buttons and labels */
+.monaco-editor .find-widget .button,
+.monaco-editor .find-widget .monaco-button {
+  color: #fff0fb !important;
+  text-shadow:
+    0 0 2px #150015,
+    0 0 4px #ff5fd2,
+    0 0 6px #ff5fd2 !important;
+}
+
+/* 📊 Breadcrumb navigation (top of editor) */
+.monaco-workbench .breadcrumbs-control .monaco-breadcrumb-item,
+.monaco-workbench .breadcrumbs-control .monaco-breadcrumb-item .label-name {
+  color: #fdfdfd !important;
+  text-shadow:
+    0 0 2px #001716,
+    0 0 3px #03edf975,
+    0 0 5px #03edf975 !important;
+}
+
+/* 🎨 Color picker popup */
+.monaco-editor .colorpicker-widget,
+.monaco-editor .colorpicker-widget .colorpicker-color-decoration {
+  text-shadow:
+    0 0 2px #1a001f,
+    0 0 4px #ff5fd2,
+    0 0 6px #ff5fd2 !important;
+}
+
+/* 📝 Rename input box (F2 rename) */
+.monaco-editor .rename-box input {
+  color: #fff !important;
+  background-color: #12000f99 !important;
+  border: 1px solid #ff5fd299 !important;
+  text-shadow:
+    0 0 2px #1a001f,
+    0 0 4px #ff5fd2,
+    0 0 6px #ff5fd2 !important;
+}
+
+/* 🎭 Hover widget (when you hover over code) */
+.monaco-editor .monaco-hover .monaco-hover-content,
+.monaco-editor .monaco-hover .monaco-hover-content .hover-row {
+  color: #fdfdfd !important;
+  background-color: #190019dd !important;
+  text-shadow:
+    0 0 2px #001716,
+    0 0 3px #03edf975,
+    0 0 5px #03edf975 !important;
+  border: 1px solid #ff5fd255 !important;
+}
+
+/* 🎪 Parameter hints popup */
+.monaco-editor .parameter-hints-widget .signature,
+.monaco-editor .parameter-hints-widget .docs {
+  color: #fff0fb !important;
+  text-shadow:
+    0 0 2px #150015,
+    0 0 4px #ff5fd2,
+    0 0 6px #ff5fd2 !important;
+}
+
+/* 📱 Notification toasts */
+.monaco-workbench .notifications-list-container .notification-list-item .notification-list-item-message,
+.monaco-workbench .notifications-list-container .notification-list-item .notification-list-item-source {
+  color: #fff5f6 !important;
+  text-shadow:
+    0 0 2px #1a0000,
+    0 0 3px #fc1f2c75,
+    0 0 5px #fc1f2c75 !important;
+}
+
+/* 🎮 Welcome tab/Start screen */
+.monaco-workbench .welcome-page .welcome-page-content .section .section-title,
+.monaco-workbench .welcome-page .welcome-page-content .section .section-description {
+  color: #fff0fb !important;
+  text-shadow:
+    0 0 2px #150015,
+    0 0 4px #ff5fd2,
+    0 0 6px #ff5fd2 !important;
+}
+
+/* 🏷️ Git decorations in explorer */
+.monaco-workbench .explorer-viewlet .monaco-list-row .label-description,
+.monaco-workbench .explorer-viewlet .monaco-list-row .decoration {
+  color: #b6fcd5 !important;
+  text-shadow:
+    0 0 2px #001716,
+    0 0 4px #72f1b8,
+    0 0 6px #72f1b8 !important;
+}
+
+/* 🎯 Minimap (code overview on right side) */
+.monaco-editor .minimap .minimap-slider {
+  background-color: #ff5fd255 !important;
+  box-shadow:
+    0 0 4px #ff5fd2,
+    0 0 8px #ff5fd2 !important;
+}
+
+/* 🌟 Tab close buttons */
+.monaco-workbench .tab .tab-close {
+  color: #ff5fd2 !important;
+  text-shadow:
+    0 0 2px #150015,
+    0 0 4px #ff5fd2,
+    0 0 6px #ff5fd2 !important;
+}
+
+/* 🎪 Workspace trust dialog */
+.monaco-workbench .workspace-trust-dialog .workspace-trust-dialog-content {
+  color: #fdfdfd !important;
+  text-shadow:
+    0 0 2px #001716,
+    0 0 3px #03edf975,
+    0 0 5px #03edf975 !important;
+}
+
+/* 🔧 Command palette placeholder text */
+.quick-input-widget .quick-input-box input::placeholder {
+  color: #ff5fd299 !important;
+  text-shadow:
+    0 0 2px #150015,
+    0 0 4px #ff5fd255 !important;
+}
+
