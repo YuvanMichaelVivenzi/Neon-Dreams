@@ -17,3 +17,9 @@ This is my VS Code
 3. Point the ```custom-glow.css``` file that's in this repo to the loader extension.
 4. Reload and inject custom css via Command Palette.
 5. Enjoy!
+
+##### Hazard Warning
+This VS Code theme might stress your computer, and your eyes.
+
+### Contribution
+Make a PR. I'll merge if I like. 
